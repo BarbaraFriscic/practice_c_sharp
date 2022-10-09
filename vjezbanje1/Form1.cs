@@ -102,5 +102,159 @@ namespace vjezbanje1
             lblDrugiSluc.Text = rndNizBrojeva[1].ToString();
 
         }
+
+        void Assign()
+        {
+            int x = Convert.ToInt32(txtValueX.Text);
+            int y = Convert.ToInt32(txtValueY.Text);
+
+            
+            Assignment1(x, y);
+            Assignment2(x, y);
+            Assignment3(x, y);
+            Assignment4(x, y);
+            Assignment5(x, y);
+            Assignment6(x, y);
+            Assignment7(x, y);
+            Assignment8(x, y);
+            Assignment9(x, y);
+            Assignment10(x, y);
+        }
+
+        void Assignment1(double first, double second)
+        {
+            
+            lblReturnValue.Text += first + " += " + second + " ---> return value: ";
+            double a = first += second;
+            lblReturnValue.Text += a + "\n";
+        }
+
+        void Assignment2(double first, double second)
+        {
+
+            lblReturnValue.Text += first + " -= " + second + " ---> return value: ";
+            double b = first -= second;
+            lblReturnValue.Text += b + "\n";
+        }
+
+        void Assignment3(double first, double second)
+        {
+
+            lblReturnValue.Text += first + " *= " + second + " ---> return value: ";
+            double c = first *= second;
+            lblReturnValue.Text += c + "\n";
+        }
+        void Assignment4(double first, double second)
+        {
+
+            lblReturnValue.Text += first + " /= " + second + " ---> return value: ";
+            double d = first /= second;
+            lblReturnValue.Text += d + "\n";
+        }
+        void Assignment5(double first, double second)
+        {
+
+            lblReturnValue.Text += first + " %= " + second + " ---> return value: ";
+            double e = first %= second;
+            lblReturnValue.Text += e + "\n";
+        }
+
+        void Assignment6(int first, int second)
+        {
+
+            lblReturnValue.Text += first + " &&= " + second + " ---> return value: ";
+            double f = first &= second;
+            lblReturnValue.Text += f + "\n";
+        }
+        void Assignment7(int first, int second)
+        {
+
+            lblReturnValue.Text += first + " |= " + second + " ---> return value: ";
+            double g = first |= second;
+            lblReturnValue.Text += g + "\n";
+        }
+        void Assignment8(int first, int second)
+        {
+
+            lblReturnValue.Text += first + " ^= " + second + " ---> return value: ";
+            double h = first ^= second;
+            lblReturnValue.Text += h + "\n";
+        }
+        void Assignment9(int first, int second)
+        {
+
+            lblReturnValue.Text += first + " >>= " + second + " ---> return value: ";
+            double i = first >>= second;
+            lblReturnValue.Text += i + "\n";
+        }
+        void Assignment10(int first, int second)
+        {
+
+            lblReturnValue.Text += first + " <<= " + second + " ---> return value: ";
+            double j = first <<= second;
+            lblReturnValue.Text += j + "\n";
+        }
+        private void btnAssignment_Click(object sender, EventArgs e)
+        {
+            Assign();
+        }
+
+        void Compare()
+        {
+            int x = Convert.ToInt32(txtValueX.Text);
+            int y = Convert.ToInt32(txtValueY.Text);
+            Comparison1(x, y);
+            Comparison2(x, y);
+            Comparison3(x, y);
+            Comparison4(x, y);
+            Comparison5(x, y);
+            Comparison6(x, y);
+        }
+
+        void Comparison1(int first, int second)
+        {
+            lblComparison.Text += first + " == " + second + " ---> return value: ";
+            bool a = first == second;
+            lblComparison.Text += a + "\n";
+        }
+        void Comparison2(int first, int second)
+        {
+            lblComparison.Text += first + " != " + second + " ---> return value: ";
+            bool b = first != second;
+            lblComparison.Text += b + "\n";
+        }
+        void Comparison3(int first, int second)
+        {
+            lblComparison.Text += first + " > " + second + " ---> return value: ";
+            bool c = first > second;
+            lblComparison.Text += c + "\n";
+        }
+        void Comparison4(int first, int second)
+        {
+            lblComparison.Text += first + " < " + second + " ---> return value: ";
+            bool d = first < second;
+            lblComparison.Text += d + "\n";
+        }
+        void Comparison5(int first, int second)
+        {
+            lblComparison.Text += first + " >= " + second + " ---> return value: ";
+            bool e = first >= second;
+            lblComparison.Text += e + "\n";
+        }
+        void Comparison6(int first, int second)
+        {
+            lblComparison.Text += first + " <= " + second + " ---> return value: ";
+            bool f = first <= second;
+            lblComparison.Text += f + "\n";
+        }
+        private void btnComparison_Click(object sender, EventArgs e)
+        {
+            Compare();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

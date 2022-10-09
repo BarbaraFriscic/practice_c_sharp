@@ -50,11 +50,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblDrugiSluc = new System.Windows.Forms.Label();
             this.btnPokreniSluc = new System.Windows.Forms.Button();
-            this.lblIspisZadatka = new System.Windows.Forms.Label();
-            this.btnPridruzivanje = new System.Windows.Forms.Button();
-            this.txtUnosBr = new System.Windows.Forms.TextBox();
+            this.lblReturnValue = new System.Windows.Forms.Label();
+            this.btnAssignment = new System.Windows.Forms.Button();
+            this.txtValueX = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnUsporedjivanje = new System.Windows.Forms.Button();
+            this.btnComparison = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtValueY = new System.Windows.Forms.TextBox();
+            this.lblComparison = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRacunaj
@@ -247,58 +250,87 @@
             this.btnPokreniSluc.UseVisualStyleBackColor = true;
             this.btnPokreniSluc.Click += new System.EventHandler(this.btnPokreniSluc_Click);
             // 
-            // lblIspisZadatka
+            // lblReturnValue
             // 
-            this.lblIspisZadatka.AutoSize = true;
-            this.lblIspisZadatka.Location = new System.Drawing.Point(952, 203);
-            this.lblIspisZadatka.Name = "lblIspisZadatka";
-            this.lblIspisZadatka.Size = new System.Drawing.Size(0, 13);
-            this.lblIspisZadatka.TabIndex = 22;
+            this.lblReturnValue.AutoSize = true;
+            this.lblReturnValue.Location = new System.Drawing.Point(759, 256);
+            this.lblReturnValue.Name = "lblReturnValue";
+            this.lblReturnValue.Size = new System.Drawing.Size(0, 13);
+            this.lblReturnValue.TabIndex = 22;
             // 
-            // btnPridruzivanje
+            // btnAssignment
             // 
-            this.btnPridruzivanje.Location = new System.Drawing.Point(1130, 155);
-            this.btnPridruzivanje.Name = "btnPridruzivanje";
-            this.btnPridruzivanje.Size = new System.Drawing.Size(115, 23);
-            this.btnPridruzivanje.TabIndex = 23;
-            this.btnPridruzivanje.Text = "PRIDRUŽIVANJE";
-            this.btnPridruzivanje.UseVisualStyleBackColor = true;
+            this.btnAssignment.Location = new System.Drawing.Point(762, 212);
+            this.btnAssignment.Name = "btnAssignment";
+            this.btnAssignment.Size = new System.Drawing.Size(115, 23);
+            this.btnAssignment.TabIndex = 23;
+            this.btnAssignment.Text = "ASSIGN Y TO X";
+            this.btnAssignment.UseVisualStyleBackColor = true;
+            this.btnAssignment.Click += new System.EventHandler(this.btnAssignment_Click);
             // 
-            // txtUnosBr
+            // txtValueX
             // 
-            this.txtUnosBr.Location = new System.Drawing.Point(955, 157);
-            this.txtUnosBr.Name = "txtUnosBr";
-            this.txtUnosBr.Size = new System.Drawing.Size(100, 20);
-            this.txtUnosBr.TabIndex = 24;
+            this.txtValueX.Location = new System.Drawing.Point(759, 175);
+            this.txtValueX.Name = "txtValueX";
+            this.txtValueX.Size = new System.Drawing.Size(100, 20);
+            this.txtValueX.TabIndex = 24;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(868, 161);
+            this.label9.Location = new System.Drawing.Point(759, 159);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 13);
+            this.label9.Size = new System.Drawing.Size(107, 13);
             this.label9.TabIndex = 25;
-            this.label9.Text = "VAŠ BROJ:";
+            this.label9.Text = "WHOLE NUMBER X";
             // 
-            // btnUsporedjivanje
+            // btnComparison
             // 
-            this.btnUsporedjivanje.Location = new System.Drawing.Point(1130, 192);
-            this.btnUsporedjivanje.Name = "btnUsporedjivanje";
-            this.btnUsporedjivanje.Size = new System.Drawing.Size(115, 23);
-            this.btnUsporedjivanje.TabIndex = 26;
-            this.btnUsporedjivanje.Text = "USPOREĐIVANJE";
-            this.btnUsporedjivanje.UseVisualStyleBackColor = true;
+            this.btnComparison.Location = new System.Drawing.Point(1047, 212);
+            this.btnComparison.Name = "btnComparison";
+            this.btnComparison.Size = new System.Drawing.Size(115, 23);
+            this.btnComparison.TabIndex = 26;
+            this.btnComparison.Text = "COMPARE X AND Y";
+            this.btnComparison.UseVisualStyleBackColor = true;
+            this.btnComparison.Click += new System.EventHandler(this.btnComparison_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(894, 159);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 13);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "WHOLE NUMBER Y";
+            // 
+            // txtValueY
+            // 
+            this.txtValueY.Location = new System.Drawing.Point(897, 175);
+            this.txtValueY.Name = "txtValueY";
+            this.txtValueY.Size = new System.Drawing.Size(100, 20);
+            this.txtValueY.TabIndex = 28;
+            // 
+            // lblComparison
+            // 
+            this.lblComparison.AutoSize = true;
+            this.lblComparison.Location = new System.Drawing.Point(1044, 256);
+            this.lblComparison.Name = "lblComparison";
+            this.lblComparison.Size = new System.Drawing.Size(0, 13);
+            this.lblComparison.TabIndex = 29;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1288, 450);
-            this.Controls.Add(this.btnUsporedjivanje);
+            this.Controls.Add(this.lblComparison);
+            this.Controls.Add(this.txtValueY);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnComparison);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtUnosBr);
-            this.Controls.Add(this.btnPridruzivanje);
-            this.Controls.Add(this.lblIspisZadatka);
+            this.Controls.Add(this.txtValueX);
+            this.Controls.Add(this.btnAssignment);
+            this.Controls.Add(this.lblReturnValue);
             this.Controls.Add(this.btnPokreniSluc);
             this.Controls.Add(this.lblDrugiSluc);
             this.Controls.Add(this.label8);
@@ -323,6 +355,7 @@
             this.Controls.Add(this.btnRacunaj);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,11 +385,14 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblDrugiSluc;
         private System.Windows.Forms.Button btnPokreniSluc;
-        private System.Windows.Forms.Label lblIspisZadatka;
-        private System.Windows.Forms.Button btnPridruzivanje;
-        private System.Windows.Forms.TextBox txtUnosBr;
+        private System.Windows.Forms.Label lblReturnValue;
+        private System.Windows.Forms.Button btnAssignment;
+        private System.Windows.Forms.TextBox txtValueX;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnUsporedjivanje;
+        private System.Windows.Forms.Button btnComparison;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtValueY;
+        private System.Windows.Forms.Label lblComparison;
     }
 }
 
