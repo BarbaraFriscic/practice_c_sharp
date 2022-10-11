@@ -58,6 +58,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtValueY = new System.Windows.Forms.TextBox();
             this.lblComparison = new System.Windows.Forms.Label();
+            this.lblInstruction1 = new System.Windows.Forms.Label();
+            this.txtInputNumber = new System.Windows.Forms.TextBox();
+            this.btnSaveElement = new System.Windows.Forms.Button();
+            this.lblReturnResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRacunaj
@@ -318,11 +322,50 @@
             this.lblComparison.Size = new System.Drawing.Size(0, 13);
             this.lblComparison.TabIndex = 29;
             // 
+            // lblInstruction1
+            // 
+            this.lblInstruction1.AutoSize = true;
+            this.lblInstruction1.Font = new System.Drawing.Font("SansSerif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.lblInstruction1.Location = new System.Drawing.Point(60, 373);
+            this.lblInstruction1.Name = "lblInstruction1";
+            this.lblInstruction1.Size = new System.Drawing.Size(98, 15);
+            this.lblInstruction1.TabIndex = 30;
+            this.lblInstruction1.Text = "Input a number:";
+            // 
+            // txtInputNumber
+            // 
+            this.txtInputNumber.Location = new System.Drawing.Point(182, 371);
+            this.txtInputNumber.Name = "txtInputNumber";
+            this.txtInputNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtInputNumber.TabIndex = 31;
+            // 
+            // btnSaveElement
+            // 
+            this.btnSaveElement.Location = new System.Drawing.Point(337, 369);
+            this.btnSaveElement.Name = "btnSaveElement";
+            this.btnSaveElement.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveElement.TabIndex = 32;
+            this.btnSaveElement.Text = "OK";
+            this.btnSaveElement.UseVisualStyleBackColor = true;
+            this.btnSaveElement.Click += new System.EventHandler(this.btnSaveElement_Click);
+            // 
+            // lblReturnResult
+            // 
+            this.lblReturnResult.AutoSize = true;
+            this.lblReturnResult.Location = new System.Drawing.Point(99, 418);
+            this.lblReturnResult.Name = "lblReturnResult";
+            this.lblReturnResult.Size = new System.Drawing.Size(0, 13);
+            this.lblReturnResult.TabIndex = 33;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1288, 450);
+            this.ClientSize = new System.Drawing.Size(1288, 766);
+            this.Controls.Add(this.lblReturnResult);
+            this.Controls.Add(this.btnSaveElement);
+            this.Controls.Add(this.txtInputNumber);
+            this.Controls.Add(this.lblInstruction1);
             this.Controls.Add(this.lblComparison);
             this.Controls.Add(this.txtValueY);
             this.Controls.Add(this.label6);
@@ -393,6 +436,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtValueY;
         private System.Windows.Forms.Label lblComparison;
+        private System.Windows.Forms.Label lblInstruction1;
+        private System.Windows.Forms.TextBox txtInputNumber;
+        private System.Windows.Forms.Button btnSaveElement;
+        private System.Windows.Forms.Label lblReturnResult;
     }
 }
 

@@ -256,5 +256,52 @@ namespace vjezbanje1
         {
 
         }
+
+        int[] userInput = new int[5];
+        int x = 0;
+
+        private void btnSaveElement_Click(object sender, EventArgs e)
+        {
+            userInput[x] = Convert.ToInt32(txtInputNumber.Text);
+            x++;
+            txtInputNumber.Clear();
+            txtInputNumber.Focus();
+
+            
+            
+
+            if (x == userInput.Length)
+            {
+                lblInstruction1.Enabled = false;
+                txtInputNumber.Enabled = false;
+                btnSaveElement.Enabled = false;
+
+               
+
+                lblReturnResult.Text += "Inputs: " + ArrayElements(userInput) + "\n";
+                ArrayMin(userInput);
+                ArrayMax(userInput);
+            }
+
+        }
+
+        static string ArrayElements(int[] userInput)
+        {
+            string arrayElements = "";
+            for(int x = 0; x < userInput.Length; x++)
+            {
+                arrayElements += " " + userInput[x] + " ";
+            }
+            return arrayElements;
+        }
+        void ArrayMin(int[] userInput)
+        {
+            lblReturnResult.Text += "Lowest value: " + Convert.ToString(userInput.Min()) + "\n";
+        }
+        void ArrayMax(int[] userInput)
+        {
+            lblReturnResult.Text += "Highest value: " + Convert.ToString(userInput.Max()) + "\n";
+        }
+
     }
 }

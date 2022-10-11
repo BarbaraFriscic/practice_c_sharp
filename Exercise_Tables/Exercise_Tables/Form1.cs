@@ -79,6 +79,10 @@ namespace Exercise_Tables
             {
                 woodType = "maple";
             }
+           else
+            {
+
+            }
 
             lblOrderSummary.Text = "You ordered " + woodType + " table and " + Drawers() + " drawers." + "\n" + "The total cost is " + OrderCosts(drawers, wood) + " kn.";
         }
