@@ -257,6 +257,8 @@ namespace vjezbanje1
 
         }
 
+// BEGINNING - ARRAY ELEMENTS, MIN, MAX EXERCISE
+
         int[] userInput = new int[5];
         int x = 0;
 
@@ -266,17 +268,12 @@ namespace vjezbanje1
             x++;
             txtInputNumber.Clear();
             txtInputNumber.Focus();
-
             
-            
-
             if (x == userInput.Length)
             {
                 lblInstruction1.Enabled = false;
                 txtInputNumber.Enabled = false;
                 btnSaveElement.Enabled = false;
-
-               
 
                 lblReturnResult.Text += "Inputs: " + ArrayElements(userInput) + "\n";
                 ArrayMin(userInput);
@@ -302,6 +299,42 @@ namespace vjezbanje1
         {
             lblReturnResult.Text += "Highest value: " + Convert.ToString(userInput.Max()) + "\n";
         }
+// END - ARRAY ELEMENTS, MIN, MAX EXERCISE
 
+
+//BEGINNING - EXERCISE REMOVE FIRST AND LAST CHARACTER
+
+        private void btnRemoveChars_Click(object sender, EventArgs e)
+        {
+            string word = txtStringInput.Text;
+            
+            lblEditReturn.Text = RemoveFirstNLastChar(word);
+
+            txtStringInput.Clear();
+            
+        }
+        
+
+       public string RemoveFirstNLastChar(string word)
+        {
+            /*  string wordNoFirstLastChar = "";
+             char[] wordChars = word.ToCharArray();
+
+             for (int i = 1; i < wordChars.Length -1; i++)
+             {
+                 wordNoFirstLastChar += word[i];
+             }
+             return wordNoFirstLastChar;
+            */
+
+            // less lines of code solution:
+
+
+            return word.Substring(1, word.Length - 2);
+             
+
+        }
+
+//END - EXERCISE REMOVE FIRST AND LAST CHARACTER
     }
 }

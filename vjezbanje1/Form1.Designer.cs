@@ -62,6 +62,10 @@
             this.txtInputNumber = new System.Windows.Forms.TextBox();
             this.btnSaveElement = new System.Windows.Forms.Button();
             this.lblReturnResult = new System.Windows.Forms.Label();
+            this.lblInstruction2 = new System.Windows.Forms.Label();
+            this.txtStringInput = new System.Windows.Forms.TextBox();
+            this.lblEditReturn = new System.Windows.Forms.Label();
+            this.btnRemoveChars = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRacunaj
@@ -357,11 +361,50 @@
             this.lblReturnResult.Size = new System.Drawing.Size(0, 13);
             this.lblReturnResult.TabIndex = 33;
             // 
+            // lblInstruction2
+            // 
+            this.lblInstruction2.AutoSize = true;
+            this.lblInstruction2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblInstruction2.Location = new System.Drawing.Point(544, 378);
+            this.lblInstruction2.Name = "lblInstruction2";
+            this.lblInstruction2.Size = new System.Drawing.Size(109, 17);
+            this.lblInstruction2.TabIndex = 34;
+            this.lblInstruction2.Text = "Input your word:";
+            // 
+            // txtStringInput
+            // 
+            this.txtStringInput.Location = new System.Drawing.Point(695, 376);
+            this.txtStringInput.Name = "txtStringInput";
+            this.txtStringInput.Size = new System.Drawing.Size(100, 20);
+            this.txtStringInput.TabIndex = 35;
+            // 
+            // lblEditReturn
+            // 
+            this.lblEditReturn.AutoSize = true;
+            this.lblEditReturn.Location = new System.Drawing.Point(544, 437);
+            this.lblEditReturn.Name = "lblEditReturn";
+            this.lblEditReturn.Size = new System.Drawing.Size(0, 13);
+            this.lblEditReturn.TabIndex = 36;
+            // 
+            // btnRemoveChars
+            // 
+            this.btnRemoveChars.Location = new System.Drawing.Point(840, 374);
+            this.btnRemoveChars.Name = "btnRemoveChars";
+            this.btnRemoveChars.Size = new System.Drawing.Size(75, 23);
+            this.btnRemoveChars.TabIndex = 37;
+            this.btnRemoveChars.Text = "EDIT";
+            this.btnRemoveChars.UseVisualStyleBackColor = true;
+            this.btnRemoveChars.Click += new System.EventHandler(this.btnRemoveChars_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1288, 766);
+            this.Controls.Add(this.btnRemoveChars);
+            this.Controls.Add(this.lblEditReturn);
+            this.Controls.Add(this.txtStringInput);
+            this.Controls.Add(this.lblInstruction2);
             this.Controls.Add(this.lblReturnResult);
             this.Controls.Add(this.btnSaveElement);
             this.Controls.Add(this.txtInputNumber);
@@ -440,6 +483,10 @@
         private System.Windows.Forms.TextBox txtInputNumber;
         private System.Windows.Forms.Button btnSaveElement;
         private System.Windows.Forms.Label lblReturnResult;
+        private System.Windows.Forms.Label lblInstruction2;
+        private System.Windows.Forms.TextBox txtStringInput;
+        private System.Windows.Forms.Label lblEditReturn;
+        private System.Windows.Forms.Button btnRemoveChars;
     }
 }
 
